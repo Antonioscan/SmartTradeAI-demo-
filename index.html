@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartTradeAI – Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Accesso Riservato</h2>
+        <input type="password" id="password" placeholder="Inserisci password">
+        <button onclick="checkPassword()">Entra</button>
+        <p id="login-error"></p>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+        <h1>📊 SmartTradeAI – Dashboard</h1>
+        <button onclick="disconnect()">Disconnetti</button>
+        <div class="section">
+            <h2>📈 Operazioni AI Attive</h2>
+            <div id="positions"></div>
+        </div>
+        <div class="section">
+            <h2>🚨 Hype Watch</h2>
+            <ul id="hype-list"></ul>
+        </div>
+    </div>
+</body>
+</html>
