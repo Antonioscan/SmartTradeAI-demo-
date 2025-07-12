@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SmartTradeAI – Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container" id="loginContainer">
+    <h2>Accesso Protetto</h2>
+    <input type="password" id="passwordInput" placeholder="Inserisci password">
+    <button onclick="checkPassword()">Entra</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <div class="main-content hidden" id="mainContent">
+    <header>
+      <h1>SmartTradeAI</h1>
+      <button onclick="logout()" class="logout-btn">Disconnetti</button>
+    </header>
+
+    <section class="status-section">
+      <h2>Monitoraggio AI Attivo</h2>
+      <p id="aiStatus">🟢 In ascolto dei segnali di mercato...</p>
+    </section>
+
+    <section class="positions-section">
+      <h2>Posizioni Correnti</h2>
+      <ul id="positionsList">
+        <li>Nessuna posizione attiva</li>
+      </ul>
+    </section>
+
+    <section class="hype-watch">
+      <h2>🔍 Hype Watch (Crypto Sotto Osservazione)</h2>
+      <ul id="hypeList">
+        <li>Analisi in corso...</li>
+      </ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
